@@ -1,0 +1,225 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+body{
+    background-color: #292929;
+    height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* <----------- TOP-MENU SECTION -----------> */
+
+.rows{
+  padding-top: 3vh;
+  padding-left: 4em;
+  width: 100vw;
+  background-color: #1a1a1a;
+  position: sticky;
+}
+
+.top-menu{
+  padding-bottom: 0vh;
+  margin-bottom: 0vh;
+}
+
+#sub-title{
+  padding: 2vh;
+  width: 15vw;
+  margin: -5vh 0vw 1vh 7svw;
+}
+
+/* menu */
+.menu-links{
+  margin-left: 4vw;
+  margin-top: 2.5vw;
+  color: white;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: 1;
+  &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid #ff8a3c;
+      transform: scaleY(0);
+      opacity: 0;
+      transition: .3s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      opacity: 0;
+      transition: .3s;
+      z-index: -1;
+    }
+  &:hover {
+      &:before {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      &:after {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+  }
+
+/* <----------- ABOUT SECTION -----------> */
+
+#about-section{
+  width: 70%;
+  height: 55vh;
+  margin-left: 42vh;
+}
+
+#profile-container{
+  width:100%; 
+  height:100%;
+  position: relative;
+}
+
+#email-div{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 95%;
+  font-size: 16px;
+}
+
+#aboutme-par{
+  margin-left: 2vw;
+  margin-top: 2vh;
+  width: 70%;
+  height: 25vh; 
+  font-size: 22px;
+}
+
+/*
+#profile{
+  width: 25vw;
+  position: absolute;
+  height: 40vh;
+  object-fit: cover;
+  clip-path: polygon(22% 3%, 78% 3%, 97% 50%, 78% 97%, 22% 97%, 3% 50%);
+}*/
+
+.shape{
+  width: 22vw;
+  height: 40vh;
+  background-color: #ff8a3c;
+  position:absolute;
+  transform: scale(0.9);
+  clip-path: polygon(22% 3%, 78% 3%, 97% 50%, 78% 97%, 22% 97%, 3% 50%);
+  filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+}
+
+.shadow-shape{
+  width: 22vw;
+  height: 40vh;
+  margin-top: 3vh;
+  background-color: #111111;
+  position:absolute;
+  transform: scale(0.9);
+  clip-path: polygon(22% 3%, 78% 3%, 97% 50%, 78% 97%, 22% 97%, 3% 50%);
+}
+
+
+.second-shape{
+  width: 18vw;
+  height: 35vh;
+  left:2.1vw;
+  background-color: #fff9f5;
+  position:absolute;
+  margin-top: 5vh;
+  clip-path: polygon(50% 0%, 82% 35%, 100% 100%, 0 100%, 16% 35%);
+  filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+}
+
+#about-title{
+  margin-top: 10px;
+  margin-right: 20vw;
+  height: 24%;
+  padding-top: 3vh;
+  padding-bottom: 0;
+  border-bottom: solid #fff9f5;
+  font-size: 54px;
+  font-weight: 100;
+  color: white;
+}
+
+.test{
+  padding-top: 1.5rem;
+  height: 15%;
+}
+
+.aboutme-links{
+  margin-left: 2vw;
+  font-size: 24px;
+  padding:0.2rem 2rem;
+  text-decoration: none;
+  color: white;
+  border: 2px solid rgb(228, 95, 0);
+  background-color: #1a1a1a;
+  border-radius: 4rem;
+  &:hover{
+    background-color: rgb(228, 95, 0);
+    transition: .3s;
+  }
+}
+
+/* <----------- PROGRAMMING-LANGUAGES SECTION -----------> */
+
+.program-section{
+  height: 100%;
+}
+
+.program-row-1{
+  width: 70%;
+  margin: auto;
+}
+.program-row-2{
+  width: 50%;
+  margin: auto;
+}
+
+.program-container{
+  width:25rem;
+  margin: auto;
+}
+
+
+.program-lang{
+  background-color: rgb(228, 95, 0);
+  color:white;
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgb(228, 95, 0);
+  border-radius: 2px;
+  width: 15rem;
+}
+
+.program-arrow{
+  background-color: rgb(70, 76, 85);
+  text-align: center;
+  color:white;
+  margin: auto;
+  width:15rem;
+  height: 17rem;
+  clip-path: polygon(100% 0%, 100% 70%, 50% 100%, 0% 70%, 0% 0%);
+}
+
+.cloud-img{
+  width:8rem;
+  height: 8rem;
+}
+
